@@ -9,11 +9,11 @@ no instructions, no stock wellness phrases, just images that linger.
 import os
 
 TEXT = (
-    "You have read a hundred voices today, and each one asked you to choose. "
-    "This one asks nothing. "
-    "The rain is still falling. "
-    "The kettle ticks as it cools. "
-    "Somewhere a river holds a stone \u2014 without effort, without letting go."
+    "The house is dark.\n"
+    "You strike a match, and the flame stands up, small and steady.\n"
+    "The room comes back around you: the table, the chairs, the window going pale.\n"
+    "You cup your hand around it and carry it across the room.\n"
+    "The flame bends, and does not go out.\n"
 )
 
 
