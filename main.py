@@ -18,6 +18,13 @@ TEXT = (
 
 
 def main() -> None:
+    # Gate: /output/entry.txt must be UTF-8 text of 1 to 280 characters
+    # (Unicode code points) and not only white space. Fail loudly here
+    # instead of shipping an artifact the judge never sees.
+    if not 1 <= len(TEXT) <= 280:
+        raise SystemExit(f"entry text is {len(TEXT)} characters, gate needs 1-280")
+    if not TEXT.strip():
+        raise SystemExit("entry text is only white space")
     os.makedirs("/output", exist_ok=True)
     with open("/output/entry.txt", "w", encoding="utf-8") as f:
         f.write(TEXT)
